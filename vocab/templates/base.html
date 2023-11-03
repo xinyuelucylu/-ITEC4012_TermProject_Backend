@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       .sidenav {
+          width: 130px;
+          position: fixed;
+          z-index: 1;
+          top: 20px;
+          left: 10px;
+          background: #eee;
+          overflow-x: hidden;
+          padding: 8px 0;
+        }
+       .main {
+          margin-left: 140px; /* Same width as the sidebar + left position in px */
+          padding: 0px 10px;
+        }
+    </style>
+    <head>
+        <title>English-French Vocabulary</title>
+    </head>
+    <body>
+    {% block sidebar %}
+        <ul>
+            <div class="sidenav">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'animals' %}">Lesson 1: Animals</a></li>
+                <li><a href="{% url 'colors' %}">Lesson 2: Colors</a></li>
+                <br/><br/><br/>
+
+                    {% if user.is_authenticated %}
+                        Welcome, {{ user.username }}!
+                        <li><a href="{% url 'my_vocab_list' %}">My vocab list</a></li>
+                        <form action="{% url 'logout' %}" method="post">
+                            {% csrf_token %}
+                            <input type="submit" value="Sign Out">
+                        </form>
+                    {% else %}
+                        Hello, Guest!
+                        <form action="{% url 'login' %}" method="post">
+                            {% csrf_token %}
+                            <input type="submit" value="Sign in">
+                        </form>
+                    {% endif %}
+
+                </div>
+              </ul>>
+              {% endblock %}
+
+            <div class="main">
+                {% block content %}{% endblock %}
+            </div>
+
+    </body>
+</html>

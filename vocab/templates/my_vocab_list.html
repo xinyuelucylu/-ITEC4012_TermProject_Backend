@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>My Vocabulary List</h1>
+
+    <table>
+        <tr>
+            <th>English</th>
+            <th>French</th>
+            <th></th>
+        </tr>
+        {% for item in user_vocabulary_words %}
+            <tr>
+                <td>{{ item.english_word }}</td>
+                <td>{{ item.french_translation }}</td>
+                <td>
+                    {% if user.is_authenticated %}
+                        <form method="post" action="{% if item in animals %}{% url 'delete_from_vocab' model_name='animals' word_id=item.id %}
+                                                    {% elif item in colors %}{% url 'delete_from_vocab' model_name='colors' word_id=item.id %}
+                                                    {% endif %}">
+                            {% csrf_token %}
+                            <button type="submit">Delete</button>
+                        </form>
+                    {% endif %}
+                </td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="3">Your vocabulary list is empty.</td>
+            </tr>
+        {% endfor %}
+    </table><br/>
+        <form method="post" action="{% url 'flashcard' model_name='user' %}">
+            {% csrf_token %}
+            <button type="submit">Start Flashcards (Users)</button>
+        </form>
+{% endblock %}
