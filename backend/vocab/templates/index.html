@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>English-French Vocabulary</h1>
+  <p>
+    Welcome to English-French Vocabulary, a website for you to learn French words!
+    Here are the list:
+    <li><a href="{% url 'animals' %}">Lesson 1: Animals</a></li>
+    <li><a href="{% url 'colors' %}">Lesson 2: Colors</a></li>
+  </p>
+
+{% endblock %}

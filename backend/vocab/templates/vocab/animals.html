@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h1>Animals</h1>
+
+
+            <table>
+                <tr>
+                    <th>English</th>
+                    <th>French</th>
+                    <th> </th>
+                </tr>
+                {% for item in vocabulary_items %}
+                    <tr>
+                        <td>{{ item.english_word }}</td>
+                        <td>{{ item.french_translation }}</td>
+
+                        <td>
+                            {% if item in user_vocabulary_words %}
+                                <span style="color: red;">Added</span>
+                            {% else %}
+                                {% if user.is_authenticated %}
+                                    <form method="post" action="{% url 'add_to_vocab' model_name='animals' word_id=item.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit">Add</button>
+                                    </form>
+                                {% endif %}
+                            {% endif %}
+                        </td>
+
+                    </tr>
+                {% endfor %}
+            </table>
+            <form method="post" action="{% url 'flashcard' model_name='animals' %}">
+                {% csrf_token %}
+                <button type="submit">Start Flashcards (Animals)</button>
+            </form>
+            <p>You can add words to your vocab list by licking "add" button</p>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'colors' %}">Lesson 2: Colors</a></li>
+ {% endblock %}
