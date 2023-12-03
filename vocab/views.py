@@ -1,6 +1,21 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Colors, UserVocabulary, Animals
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login
 from django.db.models import Q
+
+
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)  # Log in the user after registration
+            return redirect('index')  # Redirect to the home page after successful registration
+    else:
+        form = UserCreationForm()
+
+    return render(request, 'registration/register.html', {'form': form})
 
 def get_user_vocabulary_words(user):
     if user.is_authenticated:
@@ -53,7 +68,6 @@ def delete_from_vocab(request, model_name, word_id):
         model = Colors
     elif model_name == 'animals':
         model = Animals
-
 
     word = get_object_or_404(model, id=word_id)
 

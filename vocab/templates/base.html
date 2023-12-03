@@ -41,6 +41,9 @@
                             {% csrf_token %}
                             <input type="submit" value="Sign in">
                         </form>
+                        <form action="{% url 'register' %}" method="get">
+                            <input type="submit" value="Register">
+                        </form>
                     {% endif %}
 
                 </div>
