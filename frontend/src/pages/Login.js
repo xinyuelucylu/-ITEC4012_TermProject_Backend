@@ -28,7 +28,6 @@ function Login(props)  {
     return (
         <div style={{padding:"150px"}}>
             <h2>Login</h2>
-            {/* Include the CSRF token input field from the Django template */}
             <input type="hidden" name="csrfmiddlewaretoken" value="your-csrf-token-here" />
             <form onSubmit={handleFormSubmit} className="my-4">
                 <div className="form-group my-3 w-25">

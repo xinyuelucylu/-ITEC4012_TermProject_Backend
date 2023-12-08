@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Animals = () => {
     const [vocabularyItems, setVocabularyItems] = useState([]);
@@ -7,7 +6,6 @@ const Animals = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     useEffect(() => {
-        // Fetch data from the API when the component mounts
         const fetchData = async () => {
             try {
                 const response = await fetch('http://127.0.0.1:8000/api/animals/');

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavDropdown, Container, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 
 function NavBar({ isAuthenticated, username, onLogout }) {
     console.log('Props in NavBar:', { isAuthenticated, username });
