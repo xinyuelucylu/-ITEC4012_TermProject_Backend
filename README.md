@@ -32,4 +32,4 @@ Setup instruction:
 
 2. In the terminal, ensure you are in the -ITEC4012_TermProject_Backend/frontend folder. Run npm install in the terminal. If you are on a lab computer, you may need to run the following:
 
-3. Run the frontend with npm start in the terminal. 
+3. Run the frontend with npm start in the terminal. You can now view it through http://localhost:3000/
