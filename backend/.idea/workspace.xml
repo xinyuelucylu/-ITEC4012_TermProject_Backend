@@ -4,27 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f1a6d69-0d59-4883-9737-31931927223e" name="Changes" comment="commit again for registration">
-      <change beforePath="$PROJECT_DIR$/.idea/-ITEC4012_TermProject_Backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="1a5f7128-3c89-47b9-8748-1d487044aac1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/components/Nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/pages/Animals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/pages/Colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/pages/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/pages/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab/templates/vocab/animals.html" beforeDir="false" afterPath="$PROJECT_DIR$/vocab/templates/vocab/animals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab/templates/vocab/colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/vocab/templates/vocab/colors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocab/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocab/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vocab/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocab/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocabulary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocabulary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vocabulary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vocabulary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
     <envs>
@@ -38,34 +45,27 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2YxDqbKNp35xQ7IglRDAVVWu3IA" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2Z63xk3SDpLCdbBXDwAyFaRF0HA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/xinyu/Desktop/2023-2024/Web/-ITEC4012_TermProject_Backend",
+    "last_opened_file_path": "C:/Users/xinyu/Desktop/2023-2024/Web/ITEC4012_TermProject_Backend/backend/manage.py",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,17 +74,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python">
-      <module name="-ITEC4012_TermProject_Backend" />
+      <module name="backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.7" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -97,40 +98,51 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="backend" type="Python.DjangoServer" factoryName="Django server">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\python.exe" />
+      <option name="SDK_NAME" value="Python 3.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.backend" />
+      <item itemvalue="Python.manage" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8f1a6d69-0d59-4883-9737-31931927223e" name="Changes" comment="" />
-      <created>1701458528999</created>
+      <changelist id="1a5f7128-3c89-47b9-8748-1d487044aac1" name="Changes" comment="" />
+      <created>1701728949629</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701458528999</updated>
-      <workItem from="1701458530077" duration="2292000" />
-      <workItem from="1701460849445" duration="3505000" />
-      <workItem from="1701635414842" duration="838000" />
-      <workItem from="1701636435615" duration="2676000" />
+      <updated>1701728949629</updated>
+      <workItem from="1701728950722" duration="9714000" />
     </task>
-    <task id="LOCAL-00001" summary="commit again for registration">
-      <option name="closed" value="true" />
-      <created>1701635887019</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1701635887020</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit again for registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit again for registration" />
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/_ITEC4012_TermProject_Backend$manage.coverage" NAME="manage Coverage Results" MODIFIED="1701635801270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/backend$manage.coverage" NAME="manage Coverage Results" MODIFIED="1701636460950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/backend$manage.coverage" NAME="manage Coverage Results" MODIFIED="1701756140839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

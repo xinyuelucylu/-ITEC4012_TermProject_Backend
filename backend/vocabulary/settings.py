@@ -15,6 +15,19 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:3000',
+    'http://localhost:3000'
+]
+
+# Allow React frontend to send CORS requests
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:3000",
+    "http://localhost:3000",
+    ]
+# ALLOW COOKIES TO BE SENT
+CORS_ALLOW_CREDENTIALS = True
+
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 # Quick-start development settings - unsuitable for production
@@ -26,8 +39,14 @@ SECRET_KEY = 'django-insecure-_ov8)3s4@5yhw$)f52%yj)6mzed2%94tf)1by&=gv&z+81&z_g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+}
 
 # Application definition
 
@@ -38,7 +57,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'vocab',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -49,6 +70,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware'
 ]
 
 ROOT_URLCONF = 'vocabulary.urls'
