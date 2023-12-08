@@ -1,5 +1,7 @@
 # -ITEC4012_TermProject_Backend
 
+https://github.com/xinyuelucylu/ITEC4012_TermProject
+
 Note: code is in master branch, instead of main branch, right now.
 
 I didn't implement the flashcard function and add to my vocab list function that I implemented in my backend, because I ran out of time.
