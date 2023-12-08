@@ -15,7 +15,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import UserVocabularySerializer, AnimalsSerializer, ColorsSerializer
-from django.views.decorators.csrf import csrf_protect, csrf_exempt
+from django.views.decorators.csrf import csrf_exempt
 
 
 def index(request):
@@ -151,7 +151,6 @@ class ColorsAPIView(APIView):
         return Response({'vocabulary_items': serializer.data, 'user_vocabulary_words': []})
 
     def post(self, request, model_name, word_id, *args, **kwargs):
-        # Implement your add_to_vocab logic here
         return Response({'success': 'Word added to vocabulary'}, status=status.HTTP_201_CREATED)
 
 

@@ -16,8 +16,6 @@ class Animals(models.Model):
         return self.english_word
 
 
-
-
 class UserVocabulary(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     colors = models.ManyToManyField(Colors, related_name='colors')
